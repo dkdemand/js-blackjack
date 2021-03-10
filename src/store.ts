@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
+import game from './game-engine/gameEngineSlice'
 // ...
 
 const store = configureStore({
   reducer: {
-    one: oneSlice.reducer,
-    two: twoSlice.reducer
+    game
   }
 })
 

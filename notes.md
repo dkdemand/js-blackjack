@@ -42,11 +42,28 @@ type Dealer = {
 createDeck() {
     const deck = [];
     const cardValue = [2, 3, 4, 5, 6, 7, 8, 9, 10, 'J', 'Q', 'K', 'A'];
-    const suits = ['♦','♣','♥','♠'];
+    const suits = ['Spades','Hearts','Diamonds','Clubs'];
     for (let i = 0; i < cardValue.length; i++) {
         for (let x = 0; x < suits.length; x++) {
-            deck.push( (ノಠ益ಠ)ノ彡┻━┻ );
+            var cardWeight = parseInt(cardValue[i]);
+            if (cardValue[i] == "J" || values[i]== "Q" || values[i]== "K")
+                cardWeight=10;
+            if (cardValue[i] == "A")
+                cardWeight = 11;
+            var card = { value: cardValue[i], suit: suits[x], weight: cardWeight };
+            deck.push(card);
         }
     }
     return deck;
+}
+
+shuffle() {
+    // how many turns will we need ?
+    // for now we will do 10
+    for (var i = 0; i < 10; i++)
+    {
+        var randomized = Math.floor((Math.random() * deck.length));
+        var temporaryValue = deck[randomized];
+
+    }
 }
