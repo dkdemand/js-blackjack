@@ -1,0 +1,33 @@
+.game-table {
+	position: relative;
+	width: 800px;
+	height: 500px;
+	background: green;
+	margin: auto;
+	border-radius: 10% 10% 80% 80%;
+}
+
+.card-holder {
+	height: 80px;
+	width: 55px;
+	border: 1px solid white;
+	position: relative;
+	left: 50%;
+	margin: 1rem 0;
+	margin-left: -27px;
+}
+
+.dealer,
+.player {
+	color: white;
+}
+
+.dealer {
+	position: relative;
+	top: 20px;
+}
+
+.player {
+	position: relative;
+	bottom: -40%;
+}
